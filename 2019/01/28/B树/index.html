@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="代码链接：BTree 性能测试插入性能插入性能测试：t=10的情况下（t是最小度）1000个数字1KTime taken: 0.001019s1.019ms BTree&amp;lt;int, int, 10&amp;gt;10000个数字1W[0,10000)的范围Time taken: 0.003248s3.248ms BTree&amp;lt;int, int, 10&amp;gt;100000个数字10W[0,10000">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-29T11:36:33.690Z">
+<meta property="og:updated_time" content="2019-01-30T02:38:54.441Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="B树-C++实现">
 <meta name="twitter:description" content="代码链接：BTree 性能测试插入性能插入性能测试：t=10的情况下（t是最小度）1000个数字1KTime taken: 0.001019s1.019ms BTree&amp;lt;int, int, 10&amp;gt;10000个数字1W[0,10000)的范围Time taken: 0.003248s3.248ms BTree&amp;lt;int, int, 10&amp;gt;100000个数字10W[0,10000">
@@ -92,15 +92,17 @@
 <p>BTree&lt;int, int, 10&gt;<br>100000个数字<br>10W<br>[0,100000)的范围<br>Time taken: 0.049264s<br>49.264ms</p>
 <p>BTree&lt;int, int, 10&gt;<br>1000000个数字<br>100W<br>[0,1000000)的范围<br>Time taken: 0.610387s<br>610.387ms</p>
 <p>BTree&lt;int, int, 10&gt;<br>10000000个数字<br>1000W<br>[0,10000000)的范围<br>Time taken: 8.897854s<br>8897ms</p>
+<p>BTree&lt;int, int, 10&gt;<br>100000000个数字<br>1亿<br>[0,100000000)的范围<br>Insert time taken: 150.170929s</p>
 <h3 id="查询性能"><a href="#查询性能" class="headerlink" title="查询性能"></a>查询性能</h3><p>B树：<br>BTree&lt;int, int, 10&gt;</p>
 <p>10W个数字<br>[0,100000)的范围<br>Search time taken: 0.031458s<br>31.458ms</p>
 <p>100W个数字<br>[0,1000000)的范围<br>Insert time taken: 0.646902s<br>Search time taken: 0.429090s<br>429ms</p>
-<p>1000W个数字<br>[0,10000000)的范围<br>Insert time taken: 8.728024s<br>Search time taken: 8.611078s<br>8611ms</p>
+<p>1000W个数字<br>[0,10000000)的范围<br>Insert time taken: 8.728024s<br>Search time taken: 8.611078s<br>8611ms<br>单次耗时：0.0008611ms<br>Search time taken: 0.00000200s<br>0.00200ms</p>
+<p>BTree&lt;int, int, 10&gt;<br>100000000个数字<br>查询：1亿个数字<br>索引key的数目：1亿个数字<br>[0,100000000)的范围<br>Search time taken: 168.00914900s<br>168009ms<br>0.00168009ms</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/28/B树/" data-id="cjrhpmab40002y9s680c9etkg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/28/B树/" data-id="cjriss41c000180s6n166uwt2" class="article-share-link">Share</a>
       
       
     </footer>
